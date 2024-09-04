@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Trivial Quiz</title>
+    <link rel="stylesheet" href="./css/styles_login_register.css">
+</head>
+<body>
+    <div id="quiz">
+        <h1>Iniciar Sesión</h1>
+
+        <!-- Mostrar mensaje de error si existe -->
+        <div id="error-message" style="color: red; margin-bottom: 10px;"></div>
+
+        <form id="loginForm" action="/DoLogin" method="POST">
+            <div>
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="password">Contraseña:</label><br>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <br>
+            <button type="submit" class="button">Iniciar Sesión</button>
+            <div class="registrarse">
+                Quiero hacer el <a href="./registrarse.html">registro</a>
+            </div>
+        </form>
+
+        <hr>
+
+        <footer>
+            <p>&copy; 2024 Trivial Estadístico</p>
+        </footer>
+    </div>
+
+    <!-- Incluir el archivo JavaScript del frontend -->
+    <script src="./js/login.js"></script>
+</body>
+</html>

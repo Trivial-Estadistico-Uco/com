@@ -1,0 +1,129 @@
+my-trivia-project/
+├── src/
+│   ├── main/
+│   │   ├── java/
+
+│   │   │   ├── controller/
+│   │   │   │   └── TriviaController.java
+│   │   │   ├── dao/
+│   │   │   │   ├── UsuarioDAO.java
+│   │   │   │   └── PreguntaDAO.java
+│   │   │   ├── dto/
+│   │   │   │    ├── UsuarioDTO.java
+│   │   │   │    └── PreguntaDTO.java
+│   │   │   ├── service/
+│   │   │   │   ├── UsuarioService.java
+│   │   │   │   └── PreguntaService.java
+│   │   │   ├── model/
+│   │   │   │   ├── Usuario.java
+│   │   │   │   └── Pregunta.java
+│   │   │   └── common
+│   │   │       └── Connector.java
+│   │   └── resources/
+├── web/
+│   ├── WEB-INF/
+│   │   └── web.xml
+│   ├── META-INF/
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── scripts.js
+│   ├── index.html
+│   └── login.html
+└── pom.xml (si usas Maven) o build.gradle (si usas Gradle)
+
+
+
+my-trivia-project/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── controller/
+│   │   │   │   └── TriviaController.java
+│   │   │   ├── dao/
+│   │   │   │   ├── UsuarioDAO.java
+│   │   │   │   ├── PreguntaDAO.java
+│   │   │   │   ├── QuizDAO.java
+│   │   │   │   └── ResultadoDAO.java
+│   │   │   ├── dto/
+│   │   │   │   ├── UsuarioDTO.java
+│   │   │   │   ├── PreguntaDTO.java
+│   │   │   │   ├── QuizDTO.java
+│   │   │   │   └── ResultadoDTO.java
+│   │   │   ├── service/
+│   │   │   │   ├── UsuarioService.java
+│   │   │   │   ├── PreguntaService.java
+│   │   │   │   ├── QuizService.java
+│   │   │   │   └── ResultadoService.java
+│   │   │   ├── model/
+│   │   │   │   ├── Usuario.java
+│   │   │   │   ├── Pregunta.java
+│   │   │   │   ├── Quiz.java
+│   │   │   │   └── Resultado.java
+│   │   │   └── common/
+│   │   │       └── Connector.java
+│   └── resources/
+│       └── application.properties (o .yml)
+├── web/
+│   ├── WEB-INF/
+│   │   └── web.xml
+│   ├── META-INF/
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── scripts.js
+│   ├── index.html
+│   └── login.html
+└── pom.xml (si usas Maven) o build.gradle (si usas Gradle)
+
+
+
+Trivial/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── myproject/
+│   │   │           ├── controller/          # Controladores de la lógica de negocio
+│   │   │           │   └── TriviaController.java
+│   │   │           ├── dao/                 # Data Access Objects para acceder a la base de datos
+│   │   │           │   ├── UsuarioDAO.java
+│   │   │           │   ├── PreguntaDAO.java
+│   │   │           │   ├── QuizDAO.java
+│   │   │           │   └── ResultadoDAO.java
+│   │   │           ├── dto/                 # Data Transfer Objects
+│   │   │           │   ├── UsuarioDTO.java
+│   │   │           │   ├── PreguntaDTO.java
+│   │   │           │   └── QuizDTO.java
+│   │   │           ├── model/               # Modelos del dominio
+│   │   │           │   ├── Usuario.java
+│   │   │           │   ├── Pregunta.java
+│   │   │           │   └── Quiz.java
+│   │   │           ├── service/             # Servicios (lógica de negocio)
+│   │   │           │   ├── UsuarioService.java
+│   │   │           │   ├── PreguntaService.java
+│   │   │           │   └── QuizService.java
+│   │   │           └── servlet/             # Servlets para manejar solicitudes HTTP
+│   │   │               ├── DoLogin.java
+│   │   │               └── DoRegistration.java
+│   │   └── resources/                       # Recursos como archivos de configuración
+│   │       └── config.properties
+│   ├── test/
+│   │   └── java/
+│   │       └── com/
+│   │           └── myproject/
+│   │               └── TriviaControllerTest.java
+├── web/
+│   ├── WEB-INF/                             # Configuraciones web como web.xml
+│   │   └── web.xml
+│   ├── META-INF/
+│   ├── css/                                 # Archivos CSS para estilizar la interfaz
+│   │   └── styles.css
+│   ├── js/                                  # Archivos JavaScript del frontend
+│   │   ├── app.js
+│   │   └── quiz.js
+│   ├── index.html                           # Página principal del quiz
+│   ├── iniciarsesion.html                   # Página de inicio de sesión
+│   └── registro.html                        # Página de registro de usuarios
+└── pom.xml (o build.gradle)                 # Archivo de configuración del proyecto (Maven o Gradle)
+

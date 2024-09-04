@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Usuario - Trivial Quiz</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div id="userMenu">
+        <h1>Menú de Usuario</h1>
+
+        <button class="menu-button" onclick="comenzarQuiz()">Comenzar un Quiz</button>
+        <button class="menu-button" onclick="comoJugarYReglas()">Cómo Jugar y Reglas</button>
+        <button class="menu-button" onclick="verPuntuaciones()">Tus Puntuaciones</button>
+        <button class="menu-button" onclick="desconectarse()">Desconectarse</button>
+        
+        <hr>
+
+        <footer>
+            <p>&copy; 2024 Trivial Quiz</p>
+        </footer>
+    </div>
+
+    <script>
+        // Verificar si el usuario está autenticado
+        if (!sessionStorage.getItem('usuario')) {
+            // Si no está autenticado, redirigir a index.html
+            window.location.href = 'index.html';
+        }
+
+        function comenzarQuiz() {
+            window.location.href = 'quiz.html';
+        }
+
+        function comoJugarYReglas() {
+            alert("Aquí puedes poner las reglas del juego...");
+        }
+
+        function verPuntuaciones() {
+            window.location.href = 'puntuaciones.html';
+        }
+
+        function desconectarse() {
+            alert("Gracias por jugar, dale a aceptar para volver");
+            sessionStorage.removeItem('usuario');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
